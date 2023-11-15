@@ -7,14 +7,14 @@ t1  = linspace(0, 1, 1*fs);
 w = 2*pi*1100;
 s = sin(w*t1);
 
-%1100 to 1000 Hz 5 sec chirp
-t = 1/fs:1/fs:5;
+%1100 to 1000 Hz 6 sec chirp
+t = 1/fs:1/fs:6;
 fo = 1100;
-f1 = 1000;
-s2 = chirp(t,fo,5,f1);
+f1 = 800;
+s2 = chirp(t,fo,6,f1);
 
-%700 Hz 6 sec tone
-t3  = linspace(0, 6, 6*fs);
+%700 Hz 7 sec tone
+t3  = linspace(0, 7, 7*fs);
 w2 = 2*pi*700;
 F1 = sin(w2*t3);
 
