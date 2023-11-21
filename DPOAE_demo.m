@@ -34,9 +34,9 @@ F2P = [1100 linspace(1100,800,7)];
 F1P = repmat(700,1,8);
 F3P = 2*F1P - F2P;
 
-plot(F2P, LineWidth=2); hold on;
-plot(F1P, LineWidth=2);
-plot(F3P, '--', LineWidth=2);
+plot(F2P, "LineWidth", 2); hold on;
+plot(F1P, "LineWidth", 2);
+plot(F3P, '--', "LineWidth", 2);
 xlabel("Time (sec)")
 ylabel("Frequency (Hz)")
 legend('F2','F1', '2 x F1 - F2')
@@ -45,6 +45,7 @@ plot_darkmode
 
 ax = gca;
 ax.XTickLabel = [0 1 2 3 4 5 6 7];
+ax.YTickLabel = [300:100:1300];
 ax.YLim = [200 1200]; hold off
 
 
